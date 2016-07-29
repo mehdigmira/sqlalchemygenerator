@@ -3,7 +3,7 @@
 A small script that helps me build up quickly small SQlAlchemy test cases.
 For example: 
 python table_builder.py student->school->city->country student->sport will generate:
-```
+```python
 from sqlalchemy import Column, DateTime, String, Integer, ForeignKey, func, Table, create_engine
 from sqlalchemy.orm import relationship, backref, sessionmaker, joinedload, contains_eager
 from sqlalchemy.ext.declarative import declarative_base
